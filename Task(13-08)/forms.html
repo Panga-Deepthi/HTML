@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <title>HTML FORMS</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Register here</legend>
+      I am going to join in 10K coders &#x1F6AA;  and wanna learn subject and gonna become developer &#128187;
+      <form action="./formtext.txt" method="get">
+        <pre>
+          <div style="background-color:#cc99ff">
+        <label for="full name">Enter Name</label>
+        <input type="text" placeholder="Enter your name " id="full name"  pattern="[a-zA-Z0-9]{5,}" required/>
+        </div>
+        <div style="background-color:#ffffcc">
+          <label for="pswd">Enter Password</label>
+        <input type="password" placeholder="Enter your password" id="pswd" pattern="[a-zA-z0-9.!@#$%^&*]{5,}" required/>
+        </div>
+        <div style="background-color:#ff99cc">
+          <label for="email">Enter Email</label>
+          <input type="email" placeholder="Enter your email" id="email" required />
+        </div>
+        
+        <div style="background-color:#ffcc99">
+          <label for="phn number">Enter Phone Number</label>
+          <input type="tel" placeholder="Enter your Phn number" id="phn number" required/>
+        </div>
+        <div style="background-color:#66ffff">
+        <label for="age">Enter Age</label>
+        <input type="number" placeholder="Enter your age" id="age" required/>
+        </div>
+        <input type="file" multiple/>
+        <input type="date"/>
+        <div style="background-color:#cc6699;">
+          Male:<input type="radio" value="Male"/>
+          Female:<input type="radio" value="Female"/>
+          Others:<input type="radio" value="Others"/>
+        </div>
+        
+        <input type="checkbox"/>I agree to <a>terms</a> and <a>conditions.</a>
+        <div style="background-color:#999966;">
+        <label for="apetite">Select Food</label>
+          <select name="food" id="apetite" style="width:186px;">
+            <option value="">Select Food</option>
+            <option value="Biryani" selected>Biryani</option>
+            <option value="Fried rice">Fried rice</option>
+            <option value="paneer curry">paneer curry  </option>
+            <option value="Ice-cream" disabled>Ice-cream</option>
+          </select>
+        </div>
+
+        <input type="text" list="timings">
+        <datalist id="timings">
+          <option value="8.00-10.00" >8.00-10.00</option>
+          <option value="10.00-12.00">10.00-12.00</option>
+          <option value="12.00-2.00">12.00-2.00</option>
+          <option value="2.00-4.00">2.00-4.00</option>
+        </datalist>
+        <div style="background-color:#669999">
+
+        <textarea cols="50" rows="10" readonly>
+          this
+          is 
+          about 
+          forms 
+          concept
+        </textarea>
+        </div>
+
+        <label for="favcolor"> select fav color</label>
+        <input type="color" id="favcolor" value="#ffccff"/>
+
+        <div style="background-color:#b3b300">
+        <label for="bmonth">select your birthday month</label>
+        <input type="month" id="bmonth" value="bmonth"/>
+        </div>
+
+        <label for="site search">you can search here</label>
+        <input type="search" id="site search" name="q" placeholder="search">
+
+    
+        <div style="background-color:#cc00cc">
+          <label for="ttime">Time</label>
+        <input type="time" id="ttime" name="time"/>
+
+        </div>
+        <label for="tweek">week</label>
+        <input type="week" id="tweek" name="tweek">
+
+        <label for="website">enter webiste</label>
+        <input type="url" id="website" name="url" placeholder="www.example.com"/>
+
+        
+      
+        <button value="submit">submit</button>
+        </pre>
+        </form>
+    </fieldset>
+    
+  </body>
+</html>
